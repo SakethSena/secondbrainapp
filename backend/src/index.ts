@@ -1,9 +1,9 @@
 import express from "express";
-import { random } from "../utils";
+import { random } from "./utils";
 import jwt from "jsonwebtoken";
 import { ContentModel, LinkModel, UserModel } from "./db";
 import { JWT_SECRET } from "./config";
-import { userMiddleware } from "../middleware";
+import { userMiddleware } from "./middleware";
 import cors from "cors";
 
 const app = express();
